@@ -1,0 +1,40 @@
+.root {
+  margin: 32px 0 0 10px;
+  width: 100%;
+  top: 701px;
+  left: 69px;
+  position: fixed;
+  a {
+    width: 30px;
+    height: 30px;
+    background-color: #fbfbfb;
+    border-radius: 30px;
+    border: 1px solid #a3a3a3;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.1s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      background-color: darken($color: #fbfbfb, $amount: 10%);
+    }
+
+    &:active {
+      background-color: darken($color: #fbfbfb, $amount: 20%);
+    }
+  }
+
+  li {
+    display: inline-flex;
+  }
+
+  :global {
+    .selected {
+      a {
+        background-color: #7b7b7b;
+      }
+    }
+  }
+}
